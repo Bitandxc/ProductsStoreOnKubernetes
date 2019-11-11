@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mvc
-        image: devops2501acr.azurecr.io/devops2501:#(Build.BuildId)#
+        image: bguha2501/product-store-mvc:v2.#{Build.BuildId}#
         ports:
         - containerPort: 80
         resources:
