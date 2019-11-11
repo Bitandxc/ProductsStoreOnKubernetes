@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mvc
-        image: houssemdocker/products-store-mvc:3.0-prometheus #{ImageTag}# # v2.#{Build.BuildId}#
+        image: devops2501acr.azurecr.io/devops2501:#(Build.BuildId)#
         ports:
         - containerPort: 80
         resources:
