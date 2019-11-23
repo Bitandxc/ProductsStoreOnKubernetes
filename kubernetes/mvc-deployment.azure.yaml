@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mvc
-        image: bguha2501/akslivedemoa5a1:V1.#(Build.BuildId)#
+        image: bguha2501/akslivedemoa5a1:V1.#{Build.BuildId}#
         ports:
         - containerPort: 80
         resources:
