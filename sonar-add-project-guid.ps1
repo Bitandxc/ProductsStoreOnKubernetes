@@ -11,7 +11,7 @@ foreach($pathobject in $paths)
     $doc.Load($path)
     $child = $doc.CreateElement("ProjectGuid")
     $child.InnerText = [guid]::NewGuid().ToString().ToUpper()
-    $node = $doc.SelectSingleNode("//Project/PropertyGroup")
+    $node = $doc.SelectSingleNode("//Project")
     $node.AppendChild($child)
     $doc.Save($path)
 }
